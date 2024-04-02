@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+
+    font-family: 'Terminus', serif;
+    font-size: 16px;
+}
+
+#field {
+    background-color: #333;
+    display: flex;
+    flex: auto;
+    width: 100%;
+}
+
+#controls {
+    display: flex;
+    flex-basis: 12px;
+    flex-direction: row;
+    background-color: white;
+    color: black;
+}
+
+#controls span { 
+    line-height: 100%;
+}
+
+#mode {
+    font-weight: bold;
+    background-color: #ffef02;
+}
+
+.node {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    height: 32px;
+    width: 32px;
+    background-color: #ff129b;
+    border: 2px solid #ff129b;
+    border-radius: 32px;
+}
+
+.node-kostil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: -1;
+    height: 3px;
+    width: 3px;
+
+    margin: auto;
+}
+
+.node-label {
+    position: relative;
+    z-index: 1337;
+    top: 32px;
+    min-width: 10px;
+    text-align: center;
+    padding: auto;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    border-radius: 0px;
+
+    font-family: 'Terminus', sans-serif;
+}
+
+input:focus {
+    border: none;
+    outline: 1px solid white;
+}
+
+connection {
+    z-index: 0;
+    border: 3px solid #ffff00;
+    border-radius: 100%;
+}
